@@ -38,7 +38,7 @@
     체육복을 도난당했지만, 여벌의 체육복이 있는 학생들을 제거해주기 위해, filter 메소드를 사용하여 lost 와 reserve 의 교집합을 제거해준다.
     for문을 사용하여 reserve의 값 -1 or reserve의 값 +1 이 filteredLost에 있다면, filteredLost에서 찾아서 제거해준다
     이렇게하면 filteredLost에는 체육복을 빌리지 못한 학생의 번호만 남게된다
-    체육복을 빌린 학생 수 = n(전체학생수) - filteredLost.length(체육복을 빌리지 못한 학생 수)
+    체육복을 입은 전체 학생 수 = n(전체학생수) - filteredLost.length(체육복을 빌리지 못한 학생 수)
 */
 function solution(n, lost, reserve){
     let filteredLost = lost.filter(function(x){return !reserve.includes(x)});
